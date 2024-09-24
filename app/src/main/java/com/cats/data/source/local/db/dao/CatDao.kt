@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface CatDao {
 
-    @Query("SELECT * FROM catmodel")
+    @Query("SELECT * FROM catmodel ORDER BY title ASC")
     fun getAllCats(): Flow<List<CatEntity>>?
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
