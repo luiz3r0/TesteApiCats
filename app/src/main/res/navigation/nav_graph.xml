@@ -7,8 +7,8 @@
 
     <fragment
         android:id="@+id/catsFragment"
-        android:name="com.movie.ui.cats.CatsFragment"
+        android:name="com.cats.ui.cats.CatFragment"
         android:label="fragment_cats"
-        tools:layout="@layout/fragment_cats">
+        tools:layout="@layout/fragment_cat">
     </fragment>
 </navigation>
