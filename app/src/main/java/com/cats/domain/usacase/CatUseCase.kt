@@ -6,8 +6,8 @@ import kotlinx.coroutines.flow.Flow
 
 class CatUseCase(private val catRepositoryInterface: CatRepositoryInterface) : CatUseCaseInterface {
 
-    override fun getCats(): Flow<List<CatEntity>>? {
-        return catRepositoryInterface.getCats()
+    override fun getAllCats(): Flow<List<CatEntity>>? {
+        return catRepositoryInterface.getAllCats()
     }
 
     override suspend fun downloadCatsFromApi() {

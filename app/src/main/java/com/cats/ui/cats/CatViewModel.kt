@@ -36,7 +36,7 @@ class CatViewModel(
     }
 
     private fun observeCats() {
-        val source: LiveData<List<CatEntity>> = catUseCaseInterface.getCats()?.asLiveData() ?: MutableLiveData()
+        val source: LiveData<List<CatEntity>> = catUseCaseInterface.getAllCats()?.asLiveData() ?: MutableLiveData()
         source.observeForever { catEntities ->
             _dataRoomListCats.value = catEntities?.let { CatMapper.mapToModelList(it) } ?: emptyList()
         }

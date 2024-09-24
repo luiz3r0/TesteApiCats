@@ -16,7 +16,7 @@ class CatRepository(
     private val catService: CatService
 ) : CatRepositoryInterface {
 
-    override fun getCats(): Flow<List<CatEntity>>? {
+    override fun getAllCats(): Flow<List<CatEntity>>? {
         return catDao.getAllCats()
     }
 

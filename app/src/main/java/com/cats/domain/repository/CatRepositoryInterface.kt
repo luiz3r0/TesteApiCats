@@ -5,6 +5,6 @@ import kotlinx.coroutines.flow.Flow
 
 interface CatRepositoryInterface {
 
-    fun getCats(): Flow<List<CatEntity>>?
+    fun getAllCats(): Flow<List<CatEntity>>?
     suspend fun downloadCatsFromApi()
 }
